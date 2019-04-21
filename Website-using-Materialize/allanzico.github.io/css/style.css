@@ -1,0 +1,346 @@
+/* color  */
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: -webkit-linear-gradient(145deg, #DAA520 50%, #ffffff 50%);
+   /* background-image: url("../img/bg.jpg"); */
+    min-height: 400px;
+   
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+#index-container {
+    width: 100%;
+    padding-left: 12%;
+    position: relative;
+}
+
+
+
+.first-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+    }
+
+.first-column h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #DAA520;
+    text-shadow: 0px 2px 3px #555;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-style: normal;
+    font-size: 10vw;
+}
+
+.first-column h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-style: normal;
+    font-size: 5vw;
+    
+}
+
+.second-column {
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* .main-content {
+    position: relative;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {left: -1000px}
+    100% {left: 10px}
+
+}
+
+.greetings{
+    text-align: center;
+    position: relative;
+    animation-name: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {top: -100px}
+    100% {top: 10px}
+
+} */
+
+.greetings h2 {
+    color: #DAA520;
+}
+
+.side-bar {
+    height: 100%;
+    width: 8%;
+    position: fixed;
+    background: #ffffff;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    border-right: 1px solid gainsboro;
+}
+
+.nav-bar {
+    padding-left: 8%;
+  
+}
+
+.side-nav {
+    min-height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 65px;
+    list-style: none;
+    text-align: center;
+}
+
+.side-nav a {
+    padding: 20px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    display: block;
+    transition: 0.5s;
+}
+
+.side-nav li a.active-page {
+    color: #DAA520;
+}
+
+.side-nav a:hover {
+    color: #DAA520;
+}
+
+.avatar {
+    padding-top: 20%;
+    padding-left: 25%;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    /*padding-left:0px;*/
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.banner-social-buttons{
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    z-index: 2;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.banner-social-buttons div{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+   transform: translate(-35%, -35%) rotate(90deg);
+   transform-origin: 50% 50%;
+}
+
+.banner-social-buttons a{
+    color: gray;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.banner-social-buttons a:hover {
+    color: #DAA520;
+}
+
+.social-icons a{
+   display: inline-block;
+   text-decoration: none;
+}
+
+
+.cards-container {
+    -webkit-break-inside: avoid;
+  }
+  
+  .cards-container .card {
+    display: inline-block;
+    overflow: visible;
+  }
+  
+
+.humberger-icon {
+    cursor: pointer;
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+#nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000000;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+/*PORTFOLIO */
+
+
+/* Mobile */
+
+@media (max-width:768px) {
+    .side-bar {
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        border-bottom: 1px solid gainsboro;
+        overflow: hidden;
+    }
+    .side-nav {
+        padding-top: 0;
+        overflow: hidden;
+    }
+    .nav-bar {
+        padding-left: 0;
+        padding-top: 70px;
+    }
+    #index-container {
+        width: 100%;
+        padding-left: 7px;
+        padding-top: 50px;
+    }
+    #nav-toggle {
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+    .avatar {
+        overflow: hidden;
+        float: right;
+        padding: 7px;
+    }
+    .first-column h1 {
+        font-family: 'Montserrat', sans-serif;
+        color:#DAA520;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        font-size: 30vw;
+    }
+    .first-column h2 {
+        font-size: 10vw;
+    }
+    .banner-social-buttons {
+        visibility: hidden;
+    }
+}
+
+  @media only screen and (max-width: 600px) {
+    .cards-container {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+  @media only screen and (min-width: 601px) {
+    .cards-container {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .cards-container {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  
+  
