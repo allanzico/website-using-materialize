@@ -50,20 +50,20 @@ document.querySelector( "#nav-toggle" )
     var responsive = window.matchMedia("(max-width:768px)");
     if(open){
    
-        document.getElementById("side-menu").style.width = "250px";
-        document.getElementById("index-container").style.marginLeft = "250px";
+        document.getElementById("side-menu").style.width = "350px";
+        document.getElementById("side-menu").style.transitionDuration = "1s";
+        // document.getElementById("index-container").style.marginLeft = "350px";
         //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         document.body.style.overflow = "hidden";
-        document.getElementById("overlay").style.display = "block";
-      
+        document.getElementById("overlay").style.display = "block";  
         
-       
     } 
 
     else {
       
       document.getElementById("side-menu").style.width = "0";
-      document.getElementById("index-container").style.marginLeft = "0";
+      document.getElementById("side-menu").style.transitionDuration = "1s";
+      // document.getElementById("index-container").style.marginLeft = "0";
       //document.body.style.backgroundColor = "white";
       document.body.style.overflow = "visible";
       document.getElementById("overlay").style.display = "none";
