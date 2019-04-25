@@ -93,6 +93,13 @@ font-size: 8vw;
     font-size: 20px;
 }
 
+.separator{
+    border: 0;
+    width: 30%;
+    height: 10px;
+    margin: 1em 0;
+    background-color:#4fc1e9;
+}
 /* .main-content {
     position: relative;
     animation-name: content;
@@ -166,13 +173,15 @@ font-size: 8vw;
 }
 
 .side-nav li a.active-page {
-    color: #DAA520;
+    color: #4fc1e9;
 }
 
 .side-nav a:hover {
-    color: #DAA520;
+    color: #4fc1e9;
 }
-
+.work{
+    transition: 1s;
+}
 .avatar {
     padding-top: 20%;
     padding-left: 25%;
@@ -219,7 +228,7 @@ font-size: 8vw;
 }
 
 .banner-social-buttons a:hover {
-    color: #DAA520;
+    color: #4fc1e9;
 }
 
 .social-icons a{
@@ -236,8 +245,37 @@ font-size: 8vw;
     display: inline-block;
     overflow: visible;
   }
-  
 
+  .btn-flat.waves-effect:hover{
+background-color: #4fc1e9;
+color: #ffffff;
+  }
+
+  .btn-flat.waves-effect:active{
+    background-color: #4fc1e9;
+    
+      }
+    
+  
+  .page-header{
+    justify-content: space-around;
+ 
+  }
+
+.page-header h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #4fc1e9;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+.page-header p{
+    padding-bottom: 50px;
+}
+
+.info-content{
+width: 80%;
+}
 .humberger-icon {
     cursor: pointer;
 }
@@ -318,18 +356,29 @@ font-size: 8vw;
         padding-top: 0;
         overflow: hidden;
     }
+    .side-nav a {
+        padding: 10px 5px 5px 5px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 800;
+        color: #000000;
+        display: block;
+        transition: 0.5s;
+    }
     .nav-bar {
         padding-left: 0;
         padding-top: 70px;
     }
     #index-container {
         width: 90%;
+        min-height: 100px;
         padding-left: 7px;
         margin: 0 auto;
     }
     .index-content{
         width: 100%;
-        border: 1px solid #4fc1e9;
+        height: 100%;
+        overflow: hidden;
     }
     #nav-toggle {
         position: absolute;
@@ -351,6 +400,24 @@ font-size: 8vw;
     .first-column h2 {
         font-size: 10vw;
     }
+    .separator{
+        border: 0;
+        width: 70%;
+        height: 5px;
+        margin: 1em 0;
+        background-color:#4fc1e9;
+    }
+    .page-header h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #4fc1e9;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        font-style: normal;
+    }
+    .info-content{
+        width: 100%;
+        }
     .water-mark{
      display: none;
         }

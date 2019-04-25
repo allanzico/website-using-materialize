@@ -10,10 +10,10 @@ $(document).ready(function(){
         var filterVal = $(this).data('filter');
     
         if(filterVal === 'all'){
-          $mediaElements.fadeIn(1500);
+          $mediaElements.fadeIn(2000);
         }else{
            // hide all then filter the ones to show
-           $mediaElements.hide().filter('.' + filterVal).fadeIn(1500);
+           $mediaElements.hide().filter('.' + filterVal).fadeIn(2000);
         }
     });
 

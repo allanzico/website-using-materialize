@@ -3,13 +3,13 @@
 
 <head>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800,900" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -83,8 +83,8 @@
 
             <li><a href="index.html">HOME</a></li>
             <li><a href="portfolio.html" class="active-page">WORK</a></li>
-            <li><a href="#">WORK</a></li>
-            <li><a href="test.html">CONTACT</a></li>
+            <li><a href="about.html">INFO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </div>
 
 
@@ -94,150 +94,55 @@
 
     <!-- Main Content-->
     <div Id="index-container">
-        <div class="btn-container">
-            <button class="btn-flat waves-effect waves-cyan text-darken-4 active filter_link" data-filter="all">All</button></td>
-            <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link" data-filter="graphics">Graphics</button></td>
-            <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link" data-filter="web">Web</button></td>
-            <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link" data-filter="software">Software</button></td>
-        </div>
+        <div class="row">
+            <div class="col m12 page-header">
+                <h1>PORTFOLIO</h1>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt inventore excepturi
+                aperiam perferendis voluptates vero ducimus labore dolore facilis, quidem mollitia nam sit ab fuga
+                deserunt pariatur tempore soluta!
+                <hr class="separator" />
 
-        <section class="section-portfolio">
+            </div>
+            <div class="col m12 portfolio-body">
+                <div class="btn-container">
+                    <button class="btn-flat waves-effect waves-cyan text-darken-4 active filter_link"
+                        data-filter="all">All</button></td>
+                    <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link"
+                        data-filter="graphics">Graphics</button></td>
+                    <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link"
+                        data-filter="web">Web</button></td>
+                    <button class="btn-flat waves-effect waves-cyan text-darken-4 filter_link"
+                        data-filter="software">Software</button></td>
+                </div>
+
+                <section class="section-portfolio">
 
 
-            <!--Scrollspy-->
-            <div class="row">
-                    <div class="water-mark">
+                    <!--Scrollspy-->
+                    <div class="row">
+                        <div class="water-mark">
                             LET'S INNOVATE
-                           </div>
-                <div class="col s12  cards-container">
+                        </div>
+                        <div class="col m12 cards-container">
 
-                    <div class="card media Web" data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/Natasha Dark.png" alt="avatar">
+                            <div class="card media Web" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/Natasha Dark.png" alt="avatar">
 
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <span class="card-title">LOGO</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card media software " data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/avatar.png" alt="avatar">
-                            <span class="card-title">Project</span>
-                            <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                <div class="material-icons">add</div>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card media graphics" data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/avatar.png" alt="avatar">
-                            <span class="card-title">Project</span>
-                            <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                <div class="material-icons">add</div>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card media web" data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/Natasha Dark.png" alt="avatar">
-
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <span class="card-title">LOGO</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card media web " data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/avatar.png" alt="avatar">
-                            <span class="card-title">Project</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="card media software" data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/avatar.png" alt="avatar">
-                            <span class="card-title">Project</span>
-                            <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                <div class="material-icons">add</div>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card media graphics" data-aos="fade-up-right">
-                        <div class="card-image">
-                            <img src="img/avatar.png" alt="avatar">
-                            <span class="card-title">Project</span>
-                            <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                <div class="material-icons">add</div>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                                <div class="material-icons">star</div>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card media graphics" data-aos="fade-up-right">
-                            <div class="card-image">
-                                <img src="img/avatar.png" alt="avatar">
-                                <span class="card-title">Project</span>
-                                <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                    <div class="material-icons">add</div>
-                                </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <span class="card-title">LOGO</span>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <p>
-                                    <div class="material-icons">star</div>
-                                    <div class="material-icons">star</div>
-                                    <div class="material-icons">star</div>
-                                    <div class="material-icons">star</div>
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="card media web" data-aos="fade-up-right">
+                            <div class="card media software " data-aos="fade-up-right">
                                 <div class="card-image">
                                     <img src="img/avatar.png" alt="avatar">
                                     <span class="card-title">Project</span>
-                                    <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
                                         <div class="material-icons">add</div>
                                     </a>
                                 </div>
@@ -252,50 +157,172 @@
                             </div>
 
                             <div class="card media graphics" data-aos="fade-up-right">
-                                    <div class="card-image" >
-                                        <img src="img/avatar.png" alt="avatar">
-                                        <span class="card-title">Project</span>
-                                        <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                            <div class="material-icons">add</div>
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <p>
-                                            <div class="material-icons">star</div>
-                                            <div class="material-icons">star</div>
-                                            <div class="material-icons">star</div>
-                                            <div class="material-icons">star</div>
-                                        </p>
-                                    </div>
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media web" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/Natasha Dark.png" alt="avatar">
+
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <span class="card-title">LOGO</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card media web " data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+
                                 </div>
 
-                                <div class="card media web" data-aos="fade-up-right">
-                                        <div class="card-image">
-                                            <img src="img/avatar.png" alt="avatar">
-                                            <span class="card-title">Project</span>
-                                            <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                                <div class="material-icons">add</div>
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
+                            </div>
 
-                                    <div class="card media software" data-aos="fade-up-right">
-                                            <div class="card-image">
-                                                <img src="img/avatar.png" alt="avatar">
-                                                <span class="card-title">Project</span>
-                                                <a href="#abstract1" class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
-                                                    <div class="material-icons">add</div>
-                                                </a>
-                                            </div>
-                                          
-                                        </div>
-                                  
+                            <div class="card media software" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media graphics" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media graphics" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media web" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media graphics" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                        <div class="material-icons">star</div>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card media web" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="card media software" data-aos="fade-up-right">
+                                <div class="card-image">
+                                    <img src="img/avatar.png" alt="avatar">
+                                    <span class="card-title">Project</span>
+                                    <a href="#abstract1"
+                                        class="btn-floating halfway-fab waves-effect wave-light red modal-trig">
+                                        <div class="material-icons">add</div>
+                                    </a>
+                                </div>
+
+                            </div>
 
 
-                </div>
+
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
+
+
     </div>
 
 
